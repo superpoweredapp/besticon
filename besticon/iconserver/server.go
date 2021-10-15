@@ -268,6 +268,8 @@ func startServer(port string, address string) {
 	serveAsset("/icon.svg", "besticon/iconserver/assets/icon.svg", oneYear)
 	serveAsset("/favicon.ico", "besticon/iconserver/assets/favicon.ico", oneYear)
 	serveAsset("/apple-touch-icon.png", "besticon/iconserver/assets/apple-touch-icon.png", oneYear)
+	serveAsset("/github.svg", "besticon/iconserver/assets/github.svg", oneYear)
+	serveAsset("/sentry.svg", "besticon/iconserver/assets/sentry.svg", oneYear)
 
 	http.Handle("/metrics", promhttp.Handler())
 
